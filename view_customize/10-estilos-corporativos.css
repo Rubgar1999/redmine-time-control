@@ -1,0 +1,42 @@
+/*
+ * Ajustes visuales sobre el tema base.
+ *
+ * Hover en filas de tabla, botones con radio y sombra, cajas con borde suave y
+ * menú superior fijo al hacer scroll.
+ *
+ * path_pattern: .*    insertion_position: html_head
+ */
+
+table.list tbody tr:hover {
+    background-color: #f2f6f8 !important;
+    transition: background-color 0.2s ease-in-out;
+}
+
+input[type="button"], input[type="submit"], button, a.button {
+    border-radius: 5px !important;
+    border: none !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+    transition: all 0.2s ease !important;
+    cursor: pointer !important;
+}
+
+input[type="button"]:hover, input[type="submit"]:hover, button:hover, a.button:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15) !important;
+    transform: translateY(-1px) !important;
+    filter: brightness(1.05);
+}
+
+.box {
+    border-radius: 8px !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
+    border: 1px solid #ebebeb !important;
+    padding: 12px 15px !important;
+}
+
+#top-menu {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 9999 !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2) !important;
+}
+
